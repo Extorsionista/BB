@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <title>AKATSUKI // PS4 14.02</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="mark">暁</span><span>AKATSUKI<span class="muted"> / CLAN</span></span></a>
+    <span class="top-status"><i class="dot"></i> PROJECT DASHBOARD</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">PLAYSTATION 4 · FIRMWARE 14.02</div>
+      <h1>CONTROL<br><span>THE EXPERIENCE.</span></h1>
+      <p class="lead">A clean project hub for the Akatsuki 14.02 experimental build.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#overview">VIEW PROJECT <span>↘</span></a>
+        <a class="button secondary" href="#safety">READ WARNINGS</a>
+      </div>
+      <div class="hero-meta"><span>BUILD <b>14.02 / EXPERIMENTAL</b></span><span>HOST <b>GITHUB PAGES READY</b></span></div>
+    </section>
+
+    <section class="grid" id="overview">
+      <article class="panel status-panel">
+        <div class="panel-head"><span>PROJECT STATUS</span><span class="pill warn">EXPERIMENTAL</span></div>
+        <div class="status-main"><span class="status-ring">!</span><div><h2>Not hardware-validated</h2><p>The supplied project documentation reports that a successful start has not been confirmed on a PS4 running 14.02.</p></div></div>
+        <div class="meter-label"><span>DOCUMENTATION REVIEW</span><b id="reviewState">READY</b></div>
+        <div class="meter"><span></span></div>
+        <p class="small" id="updated">Dashboard initialized…</p>
+      </article>
+
+      <article class="panel info-panel">
+        <div class="panel-head"><span>FIRMWARE PROFILE</span><span class="pill">TARGET</span></div>
+        <div class="firmware">14.02</div>
+        <div class="specs"><div><span>Platform</span><b>PlayStation 4</b></div><div><span>Project</span><b>Akatsuki + HEN184</b></div><div><span>Release state</span><b class="red">Experimental</b></div></div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><div class="eyebrow">AT A GLANCE</div><h2>Project overview</h2></div><span class="section-number">01 / 03</span></div>
+      <div class="cards">
+        <article class="tile"><span class="tile-icon">◈</span><h3>Firmware target</h3><p>Project documentation identifies PS4 firmware 14.02 as its intended target.</p></article>
+        <article class="tile"><span class="tile-icon">⌁</span><h3>HEN component</h3><p>The README references the official Scene-Collective HEN184 release.</p></article>
+        <article class="tile"><span class="tile-icon">⛨</span><h3>Safety first</h3><p>Kernel patch compatibility and runtime stability remain unverified.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="safety">
+      <div class="section-title"><div><div class="eyebrow">IMPORTANT</div><h2>Before you proceed</h2></div><span class="section-number">02 / 03</span></div>
+      <article class="panel warning">
+        <div class="warning-icon">!</div>
+        <div><h3>Experimental software — use caution</h3>
+          <p>The supplied README warns that a full system freeze is possible and that the 14.02 kernel-stage changes have not been validated on hardware. This dashboard does not test or certify the exploit, payload, or console compatibility.</p>
+          <ul><li>Back up important console data.</li><li>Do not assume firmware compatibility from the version label alone.</li><li>This project does not enable PSN access or online play.</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-title"><div><div class="eyebrow">LIVE PANEL</div><h2>Dashboard activity</h2></div><span class="section-number">03 / 03</span></div>
+      <article class="panel activity">
+        <div class="activity-row"><span class="live-dot"></span><div><b>Interface online</b><small>Local dashboard scripts loaded</small></div><time id="clock">--:--:--</time></div>
+        <div class="activity-row"><span class="live-dot"></span><div><b>Page status</b><small id="pageStatus">Waiting for first refresh</small></div><time id="refreshCount">0 checks</time></div>
+        <button class="button secondary refresh" id="refresh">↻ REFRESH STATUS</button>
+        <p class="small">Status refresh checks this page's local interface only. It does not run, validate, or communicate with a console payload.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer><span class="brand"><span class="mark">暁</span> AKATSUKI</span><span>COMMUNITY PROJECT HUB · GITHUB PAGES</span><span id="year"></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
